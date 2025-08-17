@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS & JavaScript Revision Guide</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🚀 HTML, CSS & JavaScript Revision Guide</h1>
+
+        <!-- HTML SECTION -->
+        <section id="html-section">
+            <h2>📄 HTML (HyperText Markup Language)</h2>
+
+            <h3>What is HTML?</h3>
+            <p>HTML is the standard markup language for creating web pages. It describes the structure and content of a
+                webpage using elements and tags.</p>
+
+            <h3>Basic HTML Structure</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Main Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3>HTML5 Semantic Elements</h3>
+            <div class="example-box">
+                <pre><code>&lt;header&gt;Page header content&lt;/header&gt;
+&lt;nav&gt;Navigation menu&lt;/nav&gt;
+&lt;main&gt;Main content area&lt;/main&gt;
+&lt;section&gt;Section of content&lt;/section&gt;
+&lt;article&gt;Independent article&lt;/article&gt;
+&lt;aside&gt;Sidebar content&lt;/aside&gt;
+&lt;footer&gt;Page footer&lt;/footer&gt;</code></pre>
+            </div>
+
+            <h3>Common HTML Elements</h3>
+            <div class="example-box">
+                <h4>Headings (h1 to h6)</h4>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+
+                <h4>Paragraphs and Text Formatting</h4>
+                <p>This is a <strong>bold text</strong> and this is <em>italic text</em>.</p>
+                <p>This is <u>underlined</u> and this is <mark>highlighted</mark>.</p>
+                <p>This is <small>small text</small> and this is <del>deleted text</del>.</p>
+
+                <h4>Lists</h4>
+                <ul>
+                    <li>Unordered list item 1</li>
+                    <li>Unordered list item 2</li>
+                </ul>
+
+                <ol>
+                    <li>Ordered list item 1</li>
+                    <li>Ordered list item 2</li>
+                </ol>
+
+                <dl>
+                    <dt>Definition Term</dt>
+                    <dd>Definition description</dd>
+                </dl>
+
+                <h4>Links and Images</h4>
+                <a href="#" onclick="alert('Link clicked!')">This is a link</a>
+                <br><br>
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzNBOThEQiIvPgogIDx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SW1hZ2U8L3RleHQ+Cjwvc3ZnPg=="
+                    alt="Sample Image" style="border: 2px solid #ddd;">
+
+                <h4>Table Example</h4>
+                <table class="demo-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>25</td>
+                            <td>New York</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>30</td>
+                            <td>London</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Form Example</h4>
+                <form class="demo-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="demo-button">Submit Form</button>
+                </form>
+                <div id="form-result" class="result-display"></div>
+            </div>
+
+            <h3>HTML Attributes</h3>
+            <div class="example-box">
+                <pre><code>&lt;!-- Common HTML Attributes --&gt;
+&lt;div id="unique-id" class="my-class"&gt;Content&lt;/div&gt;
+&lt;img src="image.jpg" alt="Description" width="100" height="100"&gt;
+&lt;a href="https://example.com" target="_blank" title="Tooltip"&gt;Link&lt;/a&gt;
+&lt;input type="text" placeholder="Enter text" required disabled&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- CSS SECTION -->
+        <section id="css-section">
+            <h2>🎨 CSS (Cascading Style Sheets)</h2>
+
+            <h3>What is CSS?</h3>
+            <p>CSS is used to style and layout web pages. It controls colors, fonts, spacing, positioning, and
+                responsive design.</p>
+
+            <h3>CSS Syntax</h3>
+            <pre><code>selector {
+    property: value;
+    another-property: another-value;
+}</code></pre>
+
+            <h3>Ways to Include CSS</h3>
+            <pre><code>/* 1. Inline CSS */
+&lt;p style="color: red; font-size: 18px;"&gt;Red text&lt;/p&gt;
+
+/* 2. Internal CSS */
+&lt;style&gt;
+    p { color: blue; }
+&lt;/style&gt;
+
+/* 3. External CSS */
+&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+
+            <h3>CSS Selectors</h3>
+            <div class="example-box">
+                <pre><code>/* Element Selector */
+p { color: blue; }
+
+/* Class Selector */
+.highlight { background: yellow; }
+
+/* ID Selector */
+#header { font-size: 24px; }
+
+/* Attribute Selector */
+[type="text"] { border: 1px solid black; }
+
+/* Pseudo-classes */
+a:hover { color: red; }
+li:first-child { font-weight: bold; }
+
+/* Pseudo-elements */
+p::first-line { font-weight: bold; }
+p::before { content: "→ "; }</code></pre>
+
+                <p id="unique-paragraph" style="color: #e74c3c; font-weight: bold;">ID Selector: #unique-paragraph</p>
+                <p class="highlight-text" style="background: #f1c40f; padding: 10px;">Class Selector: .highlight-text
+                </p>
+                <p style="font-style: italic;">Element Selector: p</p>
+            </div>
+
+            <h3>CSS Box Model</h3>
+            <div class="example-box">
+                <div class="box-model-demo">
+                    <div class="margin">Margin
+                        <div class="border">Border
+                            <div class="padding">Padding
+                                <div class="content">Content</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <pre><code>.box {
+    margin: 20px;        /* Space outside the border */
+    border: 5px solid;   /* Border around the element */
+    padding: 15px;       /* Space inside the border */
+    width: 200px;        /* Content width */
+    height: 100px;       /* Content height */
+}</code></pre>
+            </div>
+
+            <h3>CSS Layout Systems</h3>
+            <div class="example-box">
+                <h4>Flexbox Layout</h4>
+                <div class="flex-container">
+                    <div class="flex-item">Item 1</div>
+                    <div class="flex-item">Item 2</div>
+                    <div class="flex-item">Item 3</div>
+                </div>
+                <pre><code>.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 0 10px;
+}</code></pre>
+
+                <h4>CSS Grid Layout</h4>
+                <div class="grid-demo">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                </div>
+                <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}</code></pre>
+            </div>
+
+            <h3>CSS Positions</h3>
+            <div class="example-box">
+                <pre><code>/* Static (default) */
+.static { position: static; }
+
+/* Relative - relative to normal position */
+.relative { position: relative; top: 10px; left: 10px; }
+
+/* Absolute - relative to nearest positioned parent */
+.absolute { position: absolute; top: 0; right: 0; }
+
+/* Fixed - relative to viewport */
+.fixed { position: fixed; bottom: 0; right: 0; }
+
+/* Sticky - switches between relative and fixed */
+.sticky { position: sticky; top: 0; }</code></pre>
+            </div>
+
+            <h3>CSS Animations & Transitions</h3>
+            <div class="example-box">
+                <button class="demo-button animated-button">Hover me for animation!</button>
+                <pre><code>/* Transition */
+.button {
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #e74c3c;
+}
+
+/* Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.animated {
+    animation: bounce 2s infinite;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- JAVASCRIPT SECTION -->
+        <section id="javascript-section">
+            <h2>⚡ JavaScript</h2>
+
+            <h3>What is JavaScript?</h3>
+            <p>JavaScript is a programming language that makes web pages interactive. It can change content, respond to
+                user actions, and manipulate the DOM.</p>
+
+            <h3>What is ECMAScript?</h3>
+            <div class="info-box">
+                <p><strong>ECMAScript (ES)</strong> is the standard specification that JavaScript is based on. It
+                    defines the syntax, types, statements, keywords, and built-in objects that JavaScript should
+                    provide.</p>
+                <ul>
+                    <li><strong>ES5 (2009):</strong> Added strict mode, JSON support, array methods like forEach, map,
+                        filter</li>
+                    <li><strong>ES6/ES2015 (2015):</strong> Major update with let/const, arrow functions, classes,
+                        modules, promises</li>
+                    <li><strong>ES2016+:</strong> Yearly releases with incremental improvements</li>
+                </ul>
+            </div>
+
+            <h3>1. Variables: var vs let vs const</h3>
+            <div class="comparison-table">
+                <table class="demo-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>var (ES5)</th>
+                            <th>let (ES6)</th>
+                            <th>const (ES6)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Scope</td>
+                            <td>Function/Global</td>
+                            <td>Block</td>
+                            <td>Block</td>
+                        </tr>
+                        <tr>
+                            <td>Hoisting</td>
+                            <td>Yes (undefined)</td>
+                            <td>Yes (TDZ)</td>
+                            <td>Yes (TDZ)</td>
+                        </tr>
+                        <tr>
+                            <td>Redeclaration</td>
+                            <td>Allowed</td>
+                            <td>Not allowed</td>
+                            <td>Not allowed</td>
+                        </tr>
+                        <tr>
+                            <td>Reassignment</td>
+                            <td>Allowed</td>
+                            <td>Allowed</td>
+                            <td>Not allowed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <pre><code>// var - Function scoped, hoisted
+var x = 1;
+if (true) {
+    var x = 2; // Same variable
+}
+console.log(x); // 2
+
+// let - Block scoped
+let y = 1;
+if (true) {
+    let y = 2; // Different variable
+}
+console.log(y); // 1
+
+// const - Block scoped, cannot be reassigned
+const z = 1;
+// z = 2; // Error!
+const obj = { name: 'John' };
+obj.name = 'Jane'; // OK - object content can change</code></pre>
+
+            <div class="example-box">
+                <button class="demo-button" onclick="demonstrateVariableScoping()">Demo Variable Scoping</button>
+                <div id="scoping-result" class="result-display"></div>
+            </div>
+
+            <h3>2. ES5 vs ES6+ Features</h3>
+            <div class="es-comparison">
+                <div class="es-section">
+                    <h4>🕰️ ES5 (2009)</h4>
+                    <pre><code>// Function declaration
+function greet(name) {
+    return "Hello, " + name;
+}
+
+// Array methods
+var numbers = [1, 2, 3, 4, 5];
+var doubled = numbers.map(function(n) {
+    return n * 2;
+});
+
+// Object creation
+var person = {
+    name: "John",
+    age: 30,
+    sayHello: function() {
+        return "Hello, I'm " + this.name;
+    }
+};</code></pre>
+                </div>
+
+                <div class="es-section">
+                    <h4>🚀 ES6+ (2015+)</h4>
+                    <pre><code>// Arrow functions
+const greet = (name) => `Hello, ${name}`;
+
+// Template literals & array methods
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(n => n * 2);
+
+// Enhanced object literals & destructuring
+const name = "John", age = 30;
+const person = {
+    name,
+    age,
+    sayHello() {
+        return `Hello, I'm ${this.name}`;
+    }
+};
+
+// Destructuring
+const { name: personName, age: personAge } = person;
+
+// Spread operator
+const newNumbers = [...numbers, 6, 7, 8];
+
+// Classes
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    sayHello() {
+        return `Hello, I'm ${this.name}`;
+    }
+}</code></pre>
+                </div>
+            </div>
+
+            <h3>3. Data Types</h3>
+            <pre><code>// Primitive Types
+let number = 42;                    // Number
+let string = "Hello World";         // String  
+let boolean = true;                 // Boolean
+let undefined_var = undefined;      // Undefined
+let null_var = null;               // Null
+let symbol = Symbol('id');         // Symbol (ES6)
+let bigint = 123n;                 // BigInt (ES2020)
+
+// Non-primitive Type
+let object = { name: "John" };     // Object
+let array = [1, 2, 3];            // Array (special object)
+let func = function() {};          // Function (special object)
+
+// Type checking
+console.log(typeof number);        // "number"
+console.log(Array.isArray(array)); // true</code></pre>
+
+            <div class="example-box">
+                <button class="demo-button" onclick="demonstrateDataTypes()">Show Data Types</button>
+                <div id="datatypes-result" class="result-display"></div>
+            </div>
+
+            <h3>4. Operators</h3>
+            <pre><code>// Arithmetic Operators
+let a = 10, b = 3;
+console.log(a + b);   // Addition: 13
+console.log(a - b);   // Subtraction: 7  
+console.log(a * b);   // Multiplication: 30
+console.log(a / b);   // Division: 3.33
+console.log(a % b);   // Modulus: 1
+console.log(a ** b);  // Exponentiation: 1000 (ES2016)
+
+// Assignment Operators
+a += 5;  // a = a + 5
+a -= 2;  // a = a - 2
+a *= 2;  // a = a * 2
+
+// Comparison Operators
+console.log(a > b);    // true
+console.log(a == b);   // false (loose equality)
+console.log(a === b);  // false (strict equality)
+console.log(a != b);   // true (loose inequality)  
+console.log(a !== b);  // true (strict inequality)
+
+// Logical Operators
+console.log(true && false);  // false (AND)
+console.log(true || false);  // true (OR)
+console.log(!true);          // false (NOT)
+
+// Ternary Operator
+let result = (a > b) ? "a is greater" : "b is greater";
+
+// Nullish Coalescing (ES2020)
+let value = null ?? "default value"; // "default value"</code></pre>
+
+            <div class="example-box">
+                <button class="demo-button" onclick="demonstrateOperators()">Show Operators Demo</button>
+                <div id="operators-result" class="result-display"></div>
+            </div>
+
+            <h3>5. Conditional Statements</h3>
+            <pre><code>// if-else statement
+let score = 85;
+if (score >= 90) {
+    console.log("Grade A");
+} else if (score >= 80) {
+    console.log("Grade B");
+} else if (score >= 70) {
+    console.log("Grade C");
+} else {
+    console.log("Grade F");
+}
+
+// switch statement
+let day = "Monday";
+switch (day) {
+    case "Monday":
+        console.log("Start of work week");
+        break;
+    case "Friday":
+        console.log("TGIF!");
+        break;
+    default:
+        console.log("Regular day");
+}
+
+// Ternary operator
+let message = (score >= 60) ? "Pass" : "Fail";</code></pre>
+
+            <div class="example-box">
+                <input type="number" id="score-input" placeholder="Enter score (0-100)" min="0" max="100">
+                <button class="demo-button" onclick="checkGrade()">Check Grade</button>
+                <div id="grade-result" class="result-display"></div>
+            </div>
+
+            <h3>6. Loops</h3>
+            <pre><code>// for loop
+for (let i = 0; i < 5; i++) {
+    console.log("Iteration: " + i);
+}
+
+// while loop
+let count = 0;
+while (count < 3) {
+    console.log("Count: " + count);
+    count++;
+}
+
+// do-while loop
+do {
+    console.log("This runs at least once");
+} while (false);
+
+// for...in loop (for object properties)
+let person = { name: "John", age: 30 };
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
+
+// for...of loop (for arrays/iterables) - ES6
+let fruits = ["apple", "banana", "orange"];
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+
+// forEach method
+fruits.forEach((fruit, index) => {
+    console.log(`${index}: ${fruit}`);
+});</code></pre>
+
+            <div class="example-box">
+                <button class="demo-button" onclick="demonstrateLoops()">Show Loops Demo</button>
+                <div id="loops-result" class="result-display"></div>
+            </div>
+
+            <h3>7. Functions</h3>
+            <pre><code>// Function Declaration (Hoisted)
+function greet(name = "World") {
+    return `Hello, ${name}!`;
+}
+
+// Function Expression (Not hoisted)
+const multiply = function(a, b) {
+    return a * b;
+};
+
+// Arrow Function (ES6) - Not hoisted
+const add = (a, b) => a + b;
+
+// Arrow function with block body
+const processData = (data) => {
+    const processed = data.map(x => x * 2);
+    return processed.filter(x => x > 10);
+};
+
+// Higher-order functions
+const applyOperation = (arr, operation) => {
+    return arr.map(operation);
+};
+
+// IIFE (Immediately Invoked Function Expression)
+(function() {
+    console.log("This runs immediately");
+})();
+
+// Rest parameters (ES6)
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+
+// Destructuring parameters (ES6)
+function createUser({name, age, email}) {
+    return { name, age, email, id: Date.now() };
+}</code></pre>
+
+            <div class="example-box">
+                <input type="text" id="name-input" placeholder="Enter your name">
+                <button class="demo-button" onclick="greetUser()">Greet Me!</button>
+                <div id="function-result" class="result-display"></div>
+            </div>
+
+            <h3>8. Arrays</h3>
+            <pre><code>// Creating arrays
+let numbers = [1, 2, 3, 4, 5];
+let mixed = ["hello", 42, true, null];
+let arrayFromConstructor = new Array(5); // Creates array with 5 empty slots
+
+// Array methods (Mutating)
+numbers.push(6);           // Add to end: [1,2,3,4,5,6] 
+numbers.pop();             // Remove from end: [1,2,3,4,5]
+numbers.unshift(0);        // Add to beginning: [0,1,2,3,4,5]
+numbers.shift();           // Remove from beginning: [1,2,3,4,5]
+numbers.splice(2, 1, 99);  // Replace element: [1,2,99,4,5]
+
+// Array methods (Non-mutating)
+let doubled = numbers.map(x => x * 2);                    // Transform each element
+let evens = numbers.filter(x => x % 2 === 0);            // Filter elements
+let sum = numbers.reduce((total, num) => total + num, 0); // Reduce to single value
+let found = numbers.find(x => x > 3);                     // Find first match
+let index = numbers.findIndex(x => x > 3);                // Find index of first match
+let exists = numbers.includes(3);                         // Check if element exists
+
+// ES6+ Array methods
+let [first, second, ...rest] = numbers;                   // Destructuring
+let newArray = [...numbers, 6, 7, 8];                     // Spread operator
+let flattened = [[1, 2], [3, 4]].flat();                 // Flatten array (ES2019)
+
+// Array iteration
+numbers.forEach((num, index) => {
+    console.log(`Index ${index}: ${num}`);
+});
+
+// Array.from() - ES6
+let arrayFromString = Array.from("hello"); // ['h','e','l','l','o']
+let range = Array.from({length: 5}, (_, i) => i + 1); // [1,2,3,4,5]</code></pre>
+
+            <div class="example-box">
+                <input type="text" id="array-input" placeholder="Enter numbers separated by commas">
+                <button class="demo-button" onclick="processArray()">Process Array</button>
+                <div id="array-result" class="result-display"></div>
+            </div>
+
+            <h3>9. Objects</h3>
+            <pre><code>// Object creation
+let person = {
+    name: "John",
+    age: 30,
+    hobbies: ["reading", "coding"],
+    address: {
+        city: "New York",
+        country: "USA"
+    },
+    greet() {  // ES6 method shorthand
+        return `Hello, I'm ${this.name}`;
+    }
+};
+
+// Accessing properties
+console.log(person.name);           // Dot notation
+console.log(person["age"]);         // Bracket notation
+console.log(person.address.city);   // Nested access
+
+// Adding/modifying properties
+person.email = "john@email.com";
+person["phone"] = "123-456-7890";
+
+// Object methods
+let keys = Object.keys(person);           // Get all keys
+let values = Object.values(person);       // Get all values  
+let entries = Object.entries(person);     // Get key-value pairs
+
+// ES6+ Object features
+let name = "Alice", age = 25;
+let user = {
+    name,           // Property shorthand
+    age,
+    getName() {     // Method shorthand
+        return this.name;
+    }
+};
+
+// Destructuring
+let {name: userName, age: userAge} = user;
+
+// Object spread (ES2018)
+let updatedUser = {...user, age: 26, city: "Boston"};
+
+// Optional chaining (ES2020)  
+let city = person.address?.city ?? "Unknown";</code></pre>
+
+            <div class="example-box">
+                <button class="demo-button" onclick="demonstrateObjects()">Show Objects Demo</button>
+                <div id="objects-result" class="result-display"></div>
+            </div>
+
+            <h3>10. DOM Manipulation</h3>
+            <pre><code>// Selecting elements
+let element = document.getElementById("myId");
+let elements = document.getElementsByClassName("myClass");
+let element2 = document.querySelector(".myClass");
+let allElements = document.querySelectorAll("p");
+
+// Changing content
+element.innerHTML = "&lt;strong&gt;New HTML content&lt;/strong&gt;";
+element.textContent = "New text content";
+element.innerText = "New visible text";
+
+// Changing attributes
+element.setAttribute("data-value", "123");
+element.getAttribute("data-value");
+element.removeAttribute("data-value");
+
+// Changing styles
+element.style.color = "red";
+element.style.fontSize = "20px";
+element.style.backgroundColor = "yellow";
+
+// CSS classes
+element.classList.add("active");
+element.classList.remove("inactive");
+element.classList.toggle("highlight");
+element.classList.contains("active");
+
+// Creating and inserting elements
+let newDiv = document.createElement("div");
+newDiv.textContent = "New element";
+document.body.appendChild(newDiv);
+
+// Event handling
+element.addEventListener("click", function(event) {
+    console.log("Element clicked!");
+    event.preventDefault(); // Prevent default behavior
+});
+
+// Modern event handling with arrow functions
+element.addEventListener("click", (e) => {
+    console.log("Clicked!", e.target);
+});</code></pre>
+
+            <div class="example-box">
+                <div id="dom-demo" style="padding: 20px; background: #ecf0f1; border-radius: 8px; text-align: center;">
+                    <p id="demo-text">Click the buttons below to see DOM manipulation!</p>
+                    <button class="demo-button" onclick="changeText()">Change Text</button>
+                    <button class="demo-button" onclick="changeColor()">Change Color</button>
+                    <button class="demo-button" onclick="changeSize()">Change Size</button>
+                    <button class="demo-button" onclick="addClass()">Add Class</button>
+                    <button class="demo-button" onclick="resetDemo()">Reset</button>
+                </div>
+            </div>
+
+            <h3>11. Error Handling</h3>
+            <pre><code>// try-catch-finally
+try {
+    let result = riskyOperation();
+    console.log(result);
+} catch (error) {
+    console.error("An error occurred:", error.message);
+} finally {
+    console.log("This always runs");
+}
+
+// Throwing custom errors
+function divide(a, b) {
+    if (b === 0) {
+        throw new Error("Division by zero is not allowed");
+    }
+    return a / b;
+}
+
+// Different error types
+try {
+    throw new TypeError("This is a type error");
+} catch (error) {
+    if (error instanceof TypeError) {
+        console.log("Caught a type error");
+    }
+}</code></pre>
+
+            <div class="example-box">
+                <input type="number" id="error-input1" placeholder="First number">
+                <input type="number" id="error-input2" placeholder="Second number">
+                <button class="demo-button" onclick="demonstrateErrorHandling()">Divide Numbers</button>
+                <div id="error-result" class="result-display"></div>
+            </div>
+        </section>
+
+        <!-- PRACTICAL EXAMPLES -->
+        <section id="practical-examples">
+            <h2>🛠️ Practical Examples</h2>
+
+            <h3>Interactive Calculator</h3>
+            <div class="example-box">
+                <div class="calculator-grid">
+                    <div class="calculator-inputs">
+                        <input type="number" id="num1" placeholder="First number">
+                        <input type="number" id="num2" placeholder="Second number">
+                        <select id="operation">
+                            <option value="add">Addition (+)</option>
+                            <option value="subtract">Subtraction (-)</option>
+                            <option value="multiply">Multiplication (×)</option>
+                            <option value="divide">Division (÷)</option>
+                            <option value="power">Power (^)</option>
+                            <option value="modulus">Modulus (%)</option>
+                        </select>
+                        <button class="demo-button" onclick="calculate()">Calculate</button>
+                    </div>
+                    <div id="calculator-result" class="calculator-display">
+                        Result will appear here
+                    </div>
+                </div>
+            </div>
+
+            <h3>To-Do List Application</h3>
+            <div class="example-box">
+                <div class="todo-container">
+                    <div class="todo-input-section">
+                        <input type="text" id="todo-input" placeholder="Enter a task..." maxlength="100">
+                        <button class="demo-button" onclick="addTodo()">Add Task</button>
+                        <button class="demo-button secondary" onclick="clearAllTodos()">Clear All</button>
+                    </div>
+                    <div class="todo-stats">
+                        <span id="total-tasks">Total: 0</span>
+                        <span id="completed-tasks">Completed: 0</span>
+                        <span id="pending-tasks">Pending: 0</span>
+                    </div>
+                    <ul id="todo-list" class="todo-list">
+                        <!-- Tasks will be added here dynamically -->
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Simple Form Validation</h3>
+            <div class="example-box">
+                <form class="validation-form" onsubmit="validateForm(event)">
+                    <div class="form-group">
+                        <label for="username">Username (min 3 chars):</label>
+                        <input type="text" id="username" name="username" required>
+                        <span class="error-message" id="username-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Email:</label>
+                        <input type="email" id="user-email" name="user-email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password (min 6 chars):</label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="error-message" id="password-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <span class="error-message" id="confirm-password-error"></span>
+                    </div>
+                    <button type="submit" class="demo-button">Validate & Submit</button>
+                </form>
+                <div id="validation-result" class="result-display"></div>
+            </div>
+
+            <h3>Interactive Color Picker</h3>
+            <div class="example-box">
+                <div class="color-picker-demo">
+                    <div class="color-controls">
+                        <label for="color-input">Pick a color:</label>
+                        <input type="color" id="color-input" value="#3498db" onchange="updateColor()">
+                        <label for="opacity-slider">Opacity:</label>
+                        <input type="range" id="opacity-slider" min="0" max="100" value="100" onchange="updateColor()">
+                    </div>
+                    <div id="color-display" class="color-display">
+                        <p id="color-text">Sample Text</p>
+                        <div id="color-info">
+                            <span id="hex-value">#3498db</span>
+                            <span id="rgb-value">rgb(52, 152, 219)</span>
+                            <span id="opacity-value">100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADVANCED CONCEPTS -->
+        <section id="advanced-concepts">
+            <h2>🎓 Advanced JavaScript Concepts</h2>
+
+            <h3>1. Promises and Async/Await (ES6/ES2017)</h3>
+            <pre><code>// Promise (ES6)
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const success = Math.random() > 0.3;
+            if (success) {
+                resolve("Data fetched successfully!");
+            } else {
+                reject("Failed to fetch data");
+            }
+        }, 2000);
+    });
+}
+
+// Using Promises
+fetchData()
+    .then(data => console.log(data))
+    .catch(error => console.error(error))
+    .finally(() => console.log("Request completed"));
+
+// Async/Await (ES2017)
+async function getData() {
+    try {
+        const data = await fetchData();
+        console.log(data);
+        return data;
+    } catch (error) {
+        console.error(error);
+    }
+}</code></pre>
+
+            <div class="example-box">
+                <button class="demo-button" onclick="demonstratePromises()">Demo Promises</button>
+                <button class="demo-button" onclick="demonstrateAsyncAwait()">Demo Async/Await</button>
+                <div id="promise-result" class="result-display"></div>
+            </div>
+
+            <h3>2. JSON (JavaScript Object Notation)</h3>
+            <pre><code>// JavaScript object
+let person = {
+    name: "John",
+    age: 30,
+    hobbies: ["reading", "coding"],
+    isActive: true
+};
+
+// Convert to JSON string
+let jsonString = JSON.stringify(person);
+console.log(jsonString); // '{"name":"John","age":30,"hobbies":["reading","coding"],"isActive":true}'
+
+// Parse JSON string back to object
+let parsedObject = JSON.parse(jsonString);
+console.log(parsedObject.name); // "John"
+
+// JSON with custom formatting
+let prettyJson = JSON.stringify(person, null, 2); // Indented JSON</code></pre>
+
+            <div class="example-box">
+                <textarea id="json-input" placeholder="Enter JSON here..." rows="4"></textarea>
+                <button class="demo-button" onclick="validateJSON()">Validate JSON</button>
+                <button class="demo-button" onclick="formatJSON()">Format JSON</button>
+                <div id="json-result" class="result-display"></div>
+            </div>
+
+            <h3>3. Local Storage & Session Storage</h3>
+            <pre><code>// Local Storage (persists until manually cleared)
+localStorage.setItem('username', 'john_doe');
+localStorage.setItem('preferences', JSON.stringify({theme: 'dark', lang: 'en'}));
+
+let username = localStorage.getItem('username');
+let preferences = JSON.parse(localStorage.getItem('preferences'));
+
+localStorage.removeItem('username');
+localStorage.clear(); // Clear all
+
+// Session Storage (persists until tab is closed)
+sessionStorage.setItem('sessionData', 'temporary');
+let sessionData = sessionStorage.getItem('sessionData');
+sessionStorage.clear();</code></pre>
+
+            <div class="example-box">
+                <input type="text" id="storage-key" placeholder="Key">
+                <input type="text" id="storage-value" placeholder="Value">
+                <button class="demo-button" onclick="saveToStorage()">Save to Local Storage</button>
+                <button class="demo-button" onclick="loadFromStorage()">Load from Storage</button>
+                <button class="demo-button secondary" onclick="clearStorage()">Clear Storage</button>
+                <div id="storage-result" class="result-display"></div>
+            </div>
+        </section>
+
+        <!-- SUMMARY -->
+        <section id="summary">
+            <h2>📚 Quick Reference Summary</h2>
+
+            <div class="summary-grid">
+                <div class="summary-card html-card">
+                    <h3>📄 HTML Essentials</h3>
+                    <ul>
+                        <li>✓ Document structure & semantics</li>
+                        <li>✓ Forms, tables, and lists</li>
+                        <li>✓ HTML5 semantic elements</li>
+                        <li>✓ Attributes and accessibility</li>
+                    </ul>
+                </div>
+
+                <div class="summary-card css-card">
+                    <h3>🎨 CSS Essentials</h3>
+                    <ul>
+                        <li>✓ Selectors and specificity</li>
+                        <li>✓ Box model and positioning</li>
+                        <li>✓ Flexbox and Grid layouts</li>
+                        <li>✓ Animations and responsive design</li>
+                    </ul>
+                </div>
+
+                <div class="summary-card js-card">
+                    <h3>⚡ JavaScript Essentials</h3>
+                    <ul>
+                        <li>✓ Variables (var, let, const) & data types</li>
+                        <li>✓ Functions, arrays, and objects</li>
+                        <li>✓ Loops, conditions, and operators</li>
+                        <li>✓ DOM manipulation and events</li>
+                        <li>✓ ES6+ features and async programming</li>
+                    </ul>
+                </div>
+
+                <div class="summary-card es-card">
+                    <h3>🚀 ES6+ Modern Features</h3>
+                    <ul>
+                        <li>✓ Arrow functions & template literals</li>
+                        <li>✓ Destructuring & spread operator</li>
+                        <li>✓ Classes and modules</li>
+                        <li>✓ Promises and async/await</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="best-practices">
+                <h3>💡 Best Practices</h3>
+                <div class="practices-grid">
+                    <div class="practice-item">
+                        <h4>HTML</h4>
+                        <ul>
+                            <li>Use semantic elements</li>
+                            <li>Always include alt text for images</li>
+                            <li>Validate your HTML</li>
+                            <li>Use proper heading hierarchy</li>
+                        </ul>
+                    </div>
+                    <div class="practice-item">
+                        <h4>CSS</h4>
+                        <ul>
+                            <li>Use external stylesheets</li>
+                            <li>Follow naming conventions</li>
+                            <li>Make designs responsive</li>
+                            <li>Optimize for performance</li>
+                        </ul>
+                    </div>
+                    <div class="practice-item">
+                        <h4>JavaScript</h4>
+                        <ul>
+                            <li>Use const/let instead of var</li>
+                            <li>Handle errors properly</li>
+                            <li>Use meaningful variable names</li>
+                            <li>Comment your code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h3>🎯 Remember: Practice Makes Perfect!</h3>
+            <p>Keep coding, keep learning, and don't be afraid to experiment with these concepts!</p>
+            <p><strong>Files Structure:</strong> index.html | styles.css | script.js</p>
+        </footer>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
